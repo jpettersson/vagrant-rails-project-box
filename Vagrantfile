@@ -7,7 +7,7 @@ Vagrant::Config.run do |config|
   
   config.vm.forward_port 3000, 3000
   
-  config.vm.share_folder "app", "/home/vagrant", "vagrant/"
+  config.vm.share_folder "app", "/home/vagrant/app", "app/", :create => true
 
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = ["cookbooks"]

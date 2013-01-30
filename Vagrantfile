@@ -7,8 +7,7 @@ Vagrant::Config.run do |config|
   
   config.vm.forward_port 3000, 3000
   
-  # Uncomment this to mount the container rails app into the VM
-  # config.vm.share_folder "app", "/home/vagrant", "../"
+  config.vm.share_folder "app", "/home/vagrant", "vagrant/"
 
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = ["cookbooks"]

@@ -1,5 +1,4 @@
 .vagrant
 cookbooks/
 tmp
-app/
-!app/.gitkeep
+app/*

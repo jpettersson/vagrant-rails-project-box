@@ -21,5 +21,4 @@ cookbook 'postgresql',
   git: 'https://github.com/findsyou/cookbooks',
   ref: 'postgresql-improvements'
 
-cookbook 'mysql',
-  git: "https://github.com/getaroom/chef-mysql.git"
+cookbook 'mysql'

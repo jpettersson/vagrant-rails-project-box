@@ -15,13 +15,20 @@ Vagrant::Config.run do |config|
     chef.add_recipe "build-essential"
     chef.add_recipe "rvm::vagrant"
     chef.add_recipe "rvm::system"
+    chef.add_recipe "git"
+    chef.add_recipe "postgresql"
+    chef.add_recipe "mysql::server"
 
     chef.json.merge!({
       :rvm => {
         :default_ruby => 'ruby-1.9.3-p374'
+      },
+      :mysql => {
+        "server_root_password" => "root",
+        "server_repl_password" => "root",
+        "server_debian_password" => "root"
       }
     })
 
-    chef.add_recipe "git"
   end
 end

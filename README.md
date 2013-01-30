@@ -33,16 +33,19 @@ http://vagrantup.com
 There's a folder called 'app' in this directory, it will be mounted into the VM at "/vagrant/app". This is where the rails app should be cloned. Since this folder is shared between the two environments you can edit code from your host OS and run rails commands (etc) from within the VM.
 
 To login to the VM run:
+
 ``
   $ vagrant ssh
 ``
 
 When you are done, exit the VM and run the following command to suspend it until later.
+
 ``
   $ vagrant suspend
 ``
 
 Resume work at anytime:
+
 ``
   $ vagrant up
 ``

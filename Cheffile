@@ -6,13 +6,8 @@ site 'http://community.opscode.com/api/v1'
 cookbook 'apt'
 cookbook 'build-essential'
 
-# cookbook 'ruby_build'
-#   ruby: '1.9.3-p0'
-
 cookbook 'rvm', 
  git: 'git://github.com/fnichol/chef-rvm.git'
-
-#  , ref: 'v0.8.6'
 
 cookbook 'git', 
   git: 'https://github.com/fnichol/chef-git.git'

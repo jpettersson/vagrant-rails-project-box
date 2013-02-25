@@ -7,13 +7,13 @@ cookbook 'apt'
 cookbook 'build-essential'
 
 cookbook 'rvm', 
- git: 'git://github.com/fnichol/chef-rvm.git'
+ :git => 'git://github.com/fnichol/chef-rvm.git'
 
 cookbook 'git', 
-  git: 'https://github.com/fnichol/chef-git.git'
+  :git => 'https://github.com/fnichol/chef-git.git'
 
 cookbook 'postgresql',
-  git: 'https://github.com/findsyou/cookbooks',
-  ref: 'postgresql-improvements'
+  :git => 'https://github.com/findsyou/cookbooks',
+  :ref => 'postgresql-improvements'
 
 cookbook 'mysql'

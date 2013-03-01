@@ -22,7 +22,7 @@ Vagrant::Config.run do |config|
 
     chef.json.merge!({
       :rvm => {
-        :default_ruby => 'ruby-1.9.3-p374'
+        :default_ruby => 'ruby-2.0.0'
       },
       :mysql => {
         "server_root_password" => "root",

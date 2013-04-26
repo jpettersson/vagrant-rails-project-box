@@ -19,6 +19,7 @@ Vagrant::Config.run do |config|
     chef.add_recipe "git"
     chef.add_recipe "postgresql"
     chef.add_recipe "mysql::server"
+    chef.add_recipe "java"
 
     chef.json.merge!({
       :rvm => {
@@ -29,6 +30,11 @@ Vagrant::Config.run do |config|
         "server_repl_password" => "root",
         "server_debian_password" => "root",
         "allow_remote_root" => true
+      },
+      :java => {
+        :oracle => {
+          "accept_oracle_download_terms" => true
+        }
       }
     })
 

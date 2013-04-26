@@ -17,3 +17,5 @@ cookbook 'postgresql',
   :ref => 'postgresql-improvements'
 
 cookbook 'mysql'
+
+cookbook 'java'

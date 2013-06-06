@@ -19,3 +19,5 @@ cookbook 'postgresql',
 cookbook 'mysql'
 
 cookbook 'java'
+
+cookbook 'imagemagick'

@@ -20,6 +20,7 @@ Vagrant::Config.run do |config|
     chef.add_recipe "postgresql"
     chef.add_recipe "mysql::server"
     chef.add_recipe "java"
+    chef.add_recipe "imagemagick"
 
     chef.json.merge!({
       :rvm => {

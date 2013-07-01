@@ -7,25 +7,12 @@ http://blog.base2.io/2012/05/01/vagrants-and-chefs-and-librarians-oh-my/#.UQmCJE
 ## 1. Install VirtualBox
 https://www.virtualbox.org/
 
-## 2. Install vagrant
-http://vagrantup.com
-
-## 3. Install chef
+## 2. Install vagrant and librarian
 ``
-  $ gem install chef
+  $ bundle
 ``
 
-## 4. Install librarian
-``
-  $ gem install librarian
-``
-
-## 5. Install the chef cookbooks
-``
-  $ librarian-chef install
-``
-
-## 6. Build the VM
+## 3. Build the VM
 ``
   $ vagrant up
 ``

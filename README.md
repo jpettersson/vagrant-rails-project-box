@@ -12,7 +12,12 @@ https://www.virtualbox.org/
   $ bundle
 ``
 
-## 3. Build the VM
+## 3. Install chef cookbooks
+``
+  $ librarian-chef install
+``
+
+## 4. Build the VM
 ``
   $ vagrant up
 ``

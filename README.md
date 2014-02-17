@@ -1,4 +1,4 @@
-Having fun installing all that software needed to start a new rails project? No? Then use this VM instead. Until I have finished the documentation read this to find out why this is a great thing: 
+Having fun installing all that software needed to start a new rails project? No?<br />Then use this VM instead. Read this article to find out why this is a great thing: 
 
 http://blog.base2.io/2012/05/01/vagrants-and-chefs-and-librarians-oh-my/#.UQmCJEq6BYh
 

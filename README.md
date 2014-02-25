@@ -10,7 +10,7 @@ https://www.virtualbox.org/
 ## 2. Install Vagrant
 https://www.vagrantup.com/
 
-## 3. Install vagrant and librarian
+## 3. Install gem dependencies
 ``
   $ bundle
 ``

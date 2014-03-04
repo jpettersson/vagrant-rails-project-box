@@ -1,13 +1,13 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
- 
+
 Vagrant::Config.run do |config|
   config.vm.box = "precise32"
   config.vm.box_url = "http://files.vagrantup.com/precise32.box"
-  
+
   config.vm.forward_port 3000, 3000
   config.vm.forward_port 3306, 3306
-  
+
   config.vm.share_folder "app", "/home/vagrant/app", "app/", :create => true
 
   config.vm.provision :chef_solo do |chef|
@@ -31,6 +31,7 @@ Vagrant::Config.run do |config|
         "allow_remote_root" => true
       }
     })
-
   end
+
+  config.vm.provision "shell", inline: "sudo chown -R vagrant /usr/local/rvm"
 end
